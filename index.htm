@@ -1,0 +1,515 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/DUTXM824sxO
+-->
+
+<div class="flex flex-col min-h-screen">
+    <header class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between">
+      <a class="text-xl font-bold" href="#">
+        Turf Booking
+      </a>
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-6 h-6"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+      <nav class="hidden lg:flex items-center gap-6">
+        <a class="hover:underline" href="#">
+          Turfs
+        </a>
+        <a class="hover:underline" href="#">
+          Pricing
+        </a>
+        <a class="hover:underline" href="#">
+          Reviews
+        </a>
+        <a class="hover:underline" href="#">
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <section class="bg-primary py-12 md:py-20 lg:py-24">
+        <div class="container px-4 md:px-6">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
+                Book Your Turf Now
+              </h1>
+              <p class="text-lg md:text-xl text-primary-foreground mb-8">
+                Find and book the perfect turf for your next game.
+              </p>
+              <form class="flex gap-2">
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 flex-1"
+                  placeholder="Search by location or sport"
+                  type="text"
+                />
+                <button
+                  class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+            <div>
+              <img
+                src="/placeholder.svg"
+                width="600"
+                height="400"
+                alt="Turf"
+                class="rounded-lg"
+                style="aspect-ratio: 600 / 400; object-fit: cover;"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 md:py-20 lg:py-24">
+        <div class="container px-4 md:px-6">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Available Turfs</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <img
+                src="/placeholder.svg"
+                width="400"
+                height="300"
+                alt="Turf 1"
+                class="rounded-t-lg object-cover w-full h-48"
+                style="aspect-ratio: 400 / 300; object-fit: cover;"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Day and Night</h3>
+                <p class="text-muted-foreground mb-4">5-a-side football pitch</p>
+                <div class="flex items-center justify-between">
+                  <div class="text-lg font-bold">₹1500/hr</div>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 rounded-md px-3">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <img
+                src="/placeholder.svg"
+                width="400"
+                height="300"
+                alt="Turf 2"
+                class="rounded-t-lg object-cover w-full h-48"
+                style="aspect-ratio: 400 / 300; object-fit: cover;"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Hatricks</h3>
+                <p class="text-muted-foreground mb-4">7-a-side football pitch</p>
+                <div class="flex items-center justify-between">
+                  <div class="text-lg font-bold">₹800/hr</div>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 rounded-md px-3">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <img
+                src="/placeholder.svg"
+                width="400"
+                height="300"
+                alt="Turf 3"
+                class="rounded-t-lg object-cover w-full h-48"
+                style="aspect-ratio: 400 / 300; object-fit: cover;"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Jeyapal</h3>
+                <p class="text-muted-foreground mb-4">Basketball court</p>
+                <div class="flex items-center justify-between">
+                  <div class="text-lg font-bold">₹1000/hr</div>
+                  <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 rounded-md px-3">
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-muted py-12 md:py-20 lg:py-24">
+        <div class="container px-4 md:px-6">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">Book Your Turf</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div class="p-6">
+                  <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-2">Turf 1</h3>
+                    <p class="text-muted-foreground">5-a-side football pitch</p>
+                  </div>
+                  <div class="mb-6">
+                    <h4 class="text-lg font-bold mb-2">Availability</h4>
+                    <div class="grid grid-cols-3 gap-2">
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        10:00 AM
+                      </button>
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        11:00 AM
+                      </button>
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        12:00 PM
+                      </button>
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        1:00 PM
+                      </button>
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        2:00 PM
+                      </button>
+                      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                        3:00 PM
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-bold mb-2">Pricing</h4>
+                    <p class="text-2xl font-bold">$50/hr</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div class="p-6">
+                  <form class="grid gap-4">
+                    <div class="grid gap-2">
+                      <label
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        for="date"
+                      >
+                        Date
+                      </label>
+                    </div>
+                    <div class="grid gap-2">
+                      <label
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        for="time"
+                      >
+                        Time
+                      </label>
+                      <button
+                        type="button"
+                        role="combobox"
+                        aria-controls="radix-:r4:"
+                        aria-expanded="false"
+                        aria-autocomplete="none"
+                        dir="ltr"
+                        data-state="closed"
+                        data-placeholder=""
+                        class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        <span style="pointer-events: none;">Select time</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                          aria-hidden="true"
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </button>
+                      <select
+                        aria-hidden="true"
+                        tabindex="-1"
+                        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"
+                      >
+                        <option value=""></option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                      </select>
+                    </div>
+                    <div class="grid gap-2">
+                      <label
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        for="duration"
+                      >
+                        Duration
+                      </label>
+                      <button
+                        type="button"
+                        role="combobox"
+                        aria-controls="radix-:rb:"
+                        aria-expanded="false"
+                        aria-autocomplete="none"
+                        dir="ltr"
+                        data-state="closed"
+                        data-placeholder=""
+                        class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      >
+                        <span style="pointer-events: none;">Select duration</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+                          aria-hidden="true"
+                        >
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                      </button>
+                      <select
+                        aria-hidden="true"
+                        tabindex="-1"
+                        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"
+                      >
+                        <option value=""></option>
+                        <option value="1">1 hour</option>
+                        <option value="2">2 hours</option>
+                        <option value="3">3 hours</option>
+                        <option value="4">4 hours</option>
+                      </select>
+                    </div>
+                    <button
+                      class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                      type="submit"
+                    >
+                      Book Now
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 md:py-20 lg:py-24">
+        <div class="container px-4 md:px-6">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">What Our Customers Say</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <div class="p-4">
+                <div class="flex items-center mb-4">
+                  <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 mr-4">
+                    <img class="aspect-square h-full w-full" alt="Avatar" src="/placeholder-user.jpg" />
+                  </span>
+                  <div>
+                    <h4 class="text-lg font-bold">John Doe</h4>
+                    <p class="text-muted-foreground">5-a-side player</p>
+                  </div>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  "The turf at Turf 1 is in great condition and the booking\n process was super easy. Highly
+                  recommend!"
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <div class="p-4">
+                <div class="flex items-center mb-4">
+                  <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 mr-4">
+                    <img class="aspect-square h-full w-full" alt="Avatar" src="/placeholder-user.jpg" />
+                  </span>
+                  <div>
+                    <h4 class="text-lg font-bold">Jane Appleseed</h4>
+                    <p class="text-muted-foreground">Basketball player</p>
+                  </div>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  "The basketball court at Turf 3 is well-maintained and the\n lighting is great for evening games.
+                  I'll be booking again!"
+                </p>
+                <div class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 fill-primary"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 text-muted-foreground"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+              <div class="p-4">
+                <div class="flex items-center mb-4">
+                  <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 mr-4">
+                    <img class="aspect-square h-full w-full" alt="Avatar" src="/placeholder-user.jpg" />
+                  </span>
+                  <div>
+                    <h4 class="text-lg font-bold">Sarah Miller</h4>
+                    <p class="text-muted-foreground">7-a-side player</p>
+                  </div>
+                </div>
+                <p class="text-muted-foreground mb-4">
+                  "The booking process for Turf 2 was super easy and the staff\n was{" "}
+                </p>
+                <div class="flex items-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
